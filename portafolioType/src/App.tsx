@@ -1,16 +1,10 @@
 import React from 'react';
-import About from './components/About';
-import Projects from './components/Projects';
-import Hobbies from './components/Hobbies';
-import Contact from './components/Contact';
+import { RouterR } from '../src/Router/RouterR';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <About />
-      <Projects />
-      <Hobbies />
-      <Contact />
+      <RouterR />
     </div>
   );
 }

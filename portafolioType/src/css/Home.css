@@ -1,0 +1,13 @@
+/* Home.css */
+.home-background {
+    height: 100vh;
+    width: 100vw;
+    background: url('https://blog.orange.es/wp-content/uploads/sites/4/2024/03/fondos-de-pantalla-3d-paisaje.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 254, 254); /* Asegúrate de que el texto sea visible sobre tu fondo */
+  }
+  
