@@ -1,4 +1,7 @@
+//Projects.tsx
 import React from 'react';
+import '../css/Projects.css';
+import soActive from '../assets/images/soActive.png';
 
 interface Project {
   title: string;
@@ -11,29 +14,30 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Project One',
-    description: 'Brief description of project one.',
-    technologies: 'React, CSS, HTML',
+    title: 'CampusWallet',
+    description: 'Movil application for the management of university expenses and payments',
+    technologies: 'Flutter, CMake, Swift, HTML, Dart, C++, C',
     role: 'Developer',
-    link: 'https://example.com/project-one',
-    image: 'https://via.placeholder.com/150'
+    link: 'https://github.com/PedroJuanHenaoVelez/CampusWallet',
+    image: 'https://cdn-icons-png.freepik.com/512/5735/5735153.png'
   },
   {
-    title: 'Project Two',
-    description: 'Brief description of project two.',
-    technologies: 'Vue, JavaScript',
+    title: 'So Active Page',
+    description: 'Page about gym clothes and gym accessories',
+    technologies: 'HTML, CSS, JavaScript, EJS',
     role: 'Lead Developer',
-    link: 'https://example.com/project-two',
-    image: 'https://via.placeholder.com/150'
+    link: 'https://github.com/SierraSantiago/Proyecto-PaginaWeb',
+    image: soActive
   },
   {
-    title: 'Project Three',
-    description: 'Brief description of project three.',
-    technologies: 'Angular, TypeScript',
-    role: 'Full Stack Developer',
-    link: 'https://example.com/project-three',
-    image: 'https://via.placeholder.com/150'
+    title: 'ShopSense',
+    description: 'Recomendation system for online shopping',
+    technologies: 'EJS, CSS, JavaScript, HTML, Jupiter Notebook',
+    role: 'Developer',
+    link: 'https://github.com/SierraSantiago/ShopSense',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUIlCh-Z5pPGr2Gb-97Nf-gLGQh5oH1HwhvQ&s'
   },
+  
 ];
 
 const Projects: React.FC = () => {

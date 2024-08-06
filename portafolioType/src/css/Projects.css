@@ -1,0 +1,33 @@
+/* Projects.css */
+.projects {
+    font-family: 'Playfair Display', serif;
+    width: 90%;
+    max-width: 75vw;
+    margin: 20px auto;
+    margin-left: 300px; 
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    background-color: #05305e;
+}
+
+.card-img-top{
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        margin-left: 25px; /* Un margen más pequeño para dispositivos pequeños */
+        max-width: calc(100vw - 40px); /* Ajusta el ancho máximo para no sobrepasar los límites de la pantalla */
+    }
+
+}

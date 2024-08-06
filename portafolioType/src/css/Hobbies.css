@@ -1,0 +1,71 @@
+/* Hobbies.css */
+.hobbies {
+    font-family: 'Playfair Display', serif;
+    width: 90%;
+    max-width: 75vw;
+    margin: 20px auto;
+    margin-left: 300px; 
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies h2 {
+    text-align: center;
+    color: #05305e;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hobbies .hobby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.hobbies .hobby-item img {
+    max-width: 100%; /* Asegura que las imágenes no sean más grandes que su contenedor */
+    height: auto;
+    border-radius: 5px;
+}
+.card-img-top {
+    max-width: 100%; /* Limita el ancho máximo a 100% del contenedor */
+    max-height: 340px; /* Limita la altura máxima a 200px */
+    width: auto; /* Mantiene la proporción original */
+    height: auto; /* Mantiene la proporción original */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+  }
+  
+
+.hobbies .hobby-item p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .hobbies {
+        margin-left: 25px; /* Un margen más pequeño para dispositivos pequeños */
+        max-width: calc(100vw - 40px); /* Ajusta el ancho máximo para no sobrepasar los límites de la pantalla */
+    }
+
+    .hobbies .hobby-item {
+        flex: 1 1 100%; /* Ocupa todo el ancho en dispositivos móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies {
+        margin-left: 10px; /* Margen aún menor para pantallas muy pequeñas */
+        max-width: calc(100vw - 20px); /* Reduce aún más el ancho máximo para evitar desbordamientos */
+    }
+}

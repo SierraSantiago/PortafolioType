@@ -1,51 +1,114 @@
 /* About.css */
+
+
 .about-container {
-    width: 100%; /* Toma el 100% del ancho disponible del contenedor */
-    max-width: 75vw; /* Limita el ancho máximo a 600px */
-    overflow-wrap: break-word; /* Asegura que las palabras largas se rompan para ajustarse */
+    font-family: 'Playfair Display', serif;
+    width: 90%;
+    max-width: 75vw;
+    margin: 20px auto;
+    margin-left: 300px; /* Ajusta este valor según el ancho de tu menú lateral */
     position: relative;
-    left: 300px; /* Desplaza el contenedor 300px a la derecha en pantallas grandes */
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
-    background-color: #fff; /* Cambia esto según tu esquema de colores */
-    color: #333; /* Cambia esto según tu esquema de colores */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
-}
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      margin-left: 50px; /* Reduce el margen izquierdo para dispositivos móviles */
+    }
+    
+    .detail {
+      flex-direction: column;
+    }
+  
+    .detail p {
+      flex: 1 1 100%;
+    }
+  
+    .skills {
+      flex-direction: column;
+    }
+  
+    .tools {
+      flex: 1 1 100%;
+    }
+  }
+  
 
 .about-content {
-    flex: 1 1 100%; /* Ocupa el 100% del ancho disponible en pantallas pequeñas */
-    padding-right: 20px; /* Asegura espacio entre las columnas */
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.about-details {
-    flex: 1 1 100%; /* Ocupa el 100% del ancho disponible en pantallas más pequeñas */
-    text-align: left; /* Alinea el texto a la izquierda */
-    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+.about-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #05305e;
+}
+
+.about-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-details h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #05305e;
 }
 
 .detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    flex-direction: row; /* Alinea los detalles en fila en pantallas grandes */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
+.detail p {
+  font-size: 1em;
+  margin: 5px 0;
+  flex: 1 1 45%;
+}
 
-/* Media Queries para pantallas más pequeñas */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tools {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  flex: 1 1 30%;
+}
+
+.tools li {
+  font-size: 1em;
+  margin: 5px 0;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 @media (max-width: 768px) {
-    .about-container {
-        left: 0; /* Elimina el desplazamiento hacia la derecha en pantallas más pequeñas */
-        flex-direction: column; /* Cambia la dirección del flex para columnas en pantallas más pequeñas */
-        padding: 10px;
-    }
+  .detail {
+    flex-direction: column;
+  }
 
-    .about-content, .about-details {
-        padding-right: 0; /* Elimina el padding derecho en pantallas más pequeñas */
-    }
+  .detail p {
+    flex: 1 1 100%;
+  }
 
-    .detail {
-        flex-direction: column; /* Cambia la dirección del flex para columnas en pantallas más pequeñas */
-        align-items: flex-start; /* Alinea los detalles a la izquierda */
-    }
+  .skills {
+    flex-direction: column;
+  }
+
+  .tools {
+    flex: 1 1 100%;
+  }
 }
